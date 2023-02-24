@@ -1,0 +1,14 @@
+.form-new{
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border-color: blue;
+    max-width: fit-content;
+    margin-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    background-color: aquamarine;
+}
+label{
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+
+}

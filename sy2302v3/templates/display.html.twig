@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+<h3><a href="{{ path('app_index') }}">Create New-Data</a></h3>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>UserEmailID</th>
+        <th>UserPhoneNumber</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    {% for items in users %} 
+    <tbody>
+      <tr>
+        <td>{{items.id}}</td>
+        <td>{{items.Username}}</td>
+        <td>{{items.Useremailid}}</td>
+        <td>{{items.Userphonenumber}}</td>
+        <td><a href="{{path('app_view',{'id': items.id})}}"><input type="button" value="Edit" class="btn btn-info"></a></td>
+        <td><form action="{{path('app_delete',{'id':items.id})}}" method="post">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ items.id)}}">
+        <button class="btn">Delete</button>
+        </form>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

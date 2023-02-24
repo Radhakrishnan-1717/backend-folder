@@ -1,0 +1,16 @@
+.form-control {
+    display: block !important;
+    width: 29% !important;
+}
+.form-label {
+    text-align: center !important;
+}
+form{
+    text-align: -webkit-center;
+}
+.form-check {
+    display: flex !important;
+    min-height: 1.5rem !important;
+    padding-left: 38.5em !important;
+    margin-bottom: 0.125rem !important;
+}

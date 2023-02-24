@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>UserEmailID</th>
+        <th>UserPhoneNumber</th>
+        </tr>
+    </thead>
+    {% for items in users %} 
+    <tbody>
+      <tr>
+        <td>{{items.id}}</td>
+        <td>{{items.Username}}</td>
+        <td>{{items.Useremailid}}</td>
+        <td>{{items.Userphonenumber}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

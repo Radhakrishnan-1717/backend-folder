@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+<table>
+<thead>
+<th>username</th>
+    <th>userage</th>
+        <th>userskill</th>
+            <th>uservideotitle</th>
+</thead>
+{% for user in users %}
+    
+
+<tr>
+<td>{{user.username}}</td>
+    <td>{{user.userage}}</td>
+        <td>{{user.userprodata.userskill}}</td>
+            {# <td>{{user.uservideos.uservideotitle}}</td> #}
+
+
+
+</tr>
+{% endfor %}
+<tbody>
+
+
+</tbody>
+</table>
+
+
+</div>
+{% endblock %}

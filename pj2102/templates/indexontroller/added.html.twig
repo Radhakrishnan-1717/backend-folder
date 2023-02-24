@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="text-center">
+<h1>DATA</h1>
+</div>
+{% for data in  users %}
+
+  
+<ul>
+<li><h4>ID</h4><h2>{{data.id}}</h2><h4>Username</h4>{{data.Username}}<h4>UserEmailID</h4>{{data.Useremailid}}<h4>UserPhoneNumber</h4>{{data.Userphonenumber}}</li>
+</ul>
+
+
+{% endfor %}
+
+{% endblock %}

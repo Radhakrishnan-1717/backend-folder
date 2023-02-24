@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Usertable34{% endblock %}
+
+{% block body %}
+    <h1>Edit Usertable34</h1>
+
+    {{ include('usertable34/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_usertable34_index') }}">back to list</a>
+
+    {{ include('usertable34/_delete_form.html.twig') }}
+{% endblock %}

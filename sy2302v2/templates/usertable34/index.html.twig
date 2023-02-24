@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Usertable34 index{% endblock %}
+
+{% block body %}
+    <h1>Usertable34 index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Useremailid</th>
+                <th>Userphonenumber</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for usertable34 in usertable34s %}
+            <tr>
+                <td>{{ usertable34.id }}</td>
+                <td>{{ usertable34.Username }}</td>
+                <td>{{ usertable34.Useremailid }}</td>
+                <td>{{ usertable34.Userphonenumber }}</td>
+                <td>
+                    <a href="{{ path('app_usertable34_show', {'id': usertable34.id}) }}">show</a>
+                    <a href="{{ path('app_usertable34_edit', {'id': usertable34.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_usertable34_new') }}">Create new</a>
+{% endblock %}

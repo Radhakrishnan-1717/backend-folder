@@ -1,0 +1,34 @@
+.form-new{
+    margin-left:34rem;
+    border-radius: 4rem;
+    max-width: fit-content;
+    border-color: aqua;
+    border-width: 0.2rem;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 2.25em;
+    margin-left: 28rem;
+    justify-content: baseline;
+}
+label{
+    color:brown;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.form-check {
+    display: flex;
+    padding-left: 5.5em !important;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif !important;
+    color: blueviolet;
+}
+button{
+    border-radius: 2rem !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: aquamarine !important;
+    color: black !important;
+    border-color: blanchedalmond !important;
+    border-width: 0.2rem !important;
+}
+
+

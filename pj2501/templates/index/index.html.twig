@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{# <div class="example-wrapper">
+ <table>
+<thead>
+    <th>userid</th>
+<th>username</th>
+<th>userphonenumber</th>
+    <th>userpalce</th>
+        <th>userage</th>
+</thead>
+{% for users in user %}
+<tbody>
+    <tr>
+ <td>{{users.id}}</td>
+    <td>{{users.username}}</td>
+    <td>{{users.userphonenumber}}</td>
+     <td>{{users.userplace}}</td>
+    <td>{{users.userage}}</td>
+    </tr>
+</tbody>
+{% endfor %}
+</table>
+</div> #}
+
+
+{# <div class="example-wrapper">
+ <table>
+<thead>
+    <th>userid</th>
+<th>username</th>
+<th>userphonenumber</th>
+    <th>userpalce</th>
+        <th>userage</th>
+</thead>
+{% for userss in user %}
+<tbody>
+    <tr>
+ <td>{{users.id}}</td>
+    <td>{{users.username}}</td>
+    <td>{{users.userphonenumber}}</td>
+     <td>{{users.userplace}}</td>
+    <td>{{users.userage}}</td>
+    </tr>
+</tbody> #}
+{# fineoneby #}
+{# <h1>fibdoneby</h1>
+<table>
+    <thead>
+    <th>id</th>
+    <th>username</th>
+    <th>userphonenumber</th>
+    <th>userplace</th>
+    <th>userage</th>
+    </thead>
+    <tbody>
+
+    <tr>
+    <td>{{use.id}}</td>
+    <td>{{use.username}}</td>
+    <td>{{use.userphonenumber}}</td>
+    <td>{{use.userplace}}</td>
+    <td>{{use.userage}}</td>
+    </tr>
+    </tbody>
+    </table> #}
+{# {% endfor %} #}
+{# </table>
+</div> #}
+{% endblock %}

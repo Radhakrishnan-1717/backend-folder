@@ -1,0 +1,40 @@
+{% extends 'remove.html.twig' %}
+
+
+
+{% block body %}
+<div class="example-wrapper">
+<table>
+    <thead>
+<th>customername</th>
+<th>customerage</th>
+<th>customernumber</th>
+<th>customergender</th>
+<th>customermaritalstatus</th>
+<th>customerdob</th>
+<th>customerrole</th>
+<th>customerid</th>
+    </thead>
+    <tbody>
+        {% for users in user %}
+            
+       
+    <tr>
+    <td>{{users.id}}</td>
+    <td>{{users.customername}}</td>
+    <td>{{users.customerage}}</td>
+    <td>{{users.customernumber}}</td>
+    <td>{{users.customergender}}</td>
+    <td>{{users.customerprofdata.customermaritalstatus}}</td>
+    <td>{{users.customerprofdata.customerdob}}</td>
+    <td>{{users.customerpersdata.customerrole}}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+    </table>
+
+</div>
+
+
+
+{% endblock %}

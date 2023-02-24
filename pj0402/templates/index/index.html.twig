@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<table>
+<thead>
+<th>username</th>
+<th>userage</th>
+<th>uservideotitle</th>
+</thead>
+{% for user in table %}
+<tbody>
+<tr>
+<td>{{user.username}}</td>
+<td>{{user.userage}}</td>
+<td>{{user.uservideo.uservideotitle}}</td>
+</tr>
+</tbody>
+{% endfor %}
+</table>
+
+
+
+</div>
+{% endblock %}

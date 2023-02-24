@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>UserEmailID</th>
+        <th>UserPhoneNumber</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    {% for items in data %} 
+    <tbody>
+      <tr>
+        <td>{{items.id}}</td>
+        <td>{{items.Username}}</td>
+        <td>{{items.Useremailid}}</td>
+        <td>{{items.Userphonenumber}}</td>
+        <td><a href=""><input type="button" value="Edit" class="btn btn-info"></a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

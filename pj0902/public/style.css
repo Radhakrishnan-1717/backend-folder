@@ -1,0 +1,39 @@
+body{
+    background-color: #F0ECFC !important;
+}
+
+.new-form{
+    max-width: 15rem;  
+    border-radius: 1rem !important;
+    border-color: blue !important;
+    border-width: 0.2rem !important;
+
+}
+.text-center{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+#basicdata{
+    /* padding-left: 33rem;
+    padding-top: 3rem; */
+    text-align: -webkit-center;
+    color:#B91372;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.form-check {
+    display: flex !important;
+    justify-content: center !important;
+    min-height: 1.5rem !important;
+    padding-left: 1.5em !important;
+    margin-bottom: 0.125rem !important;
+}
+input{
+    border-radius: 10rem;
+}
+#basicdata_Submit{
+    border-radius: 1rem !important;
+    color: black !important;
+    background-color:white;
+    border-color: aquamarine;
+    border-width: 0.2rem !important;
+}

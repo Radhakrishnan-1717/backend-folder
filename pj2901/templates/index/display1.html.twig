@@ -1,0 +1,26 @@
+{% extends 'display1.html.twig' %}
+
+
+{% block body %}
+
+<div class="example-wrapper">
+<table>
+    <thead>
+    <th>id</th>
+    <th>username</th>
+    <th>userage</th>
+    <th>userphonenumber</th>
+    <th>userplace</th>
+    </thead>
+    <tbody>
+    <tr>
+    <td>{{users.id}}</td>
+    <td>{{users.username}}</td>
+    <td>{{users.userage}}</td>
+    <td>{{users.usernumber}}</td>
+    <td>{{users.userplace}}</td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+{% endblock %}

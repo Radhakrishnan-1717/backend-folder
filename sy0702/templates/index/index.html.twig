@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+
+<div class="text-center"><h1>Form-Validation</h1></div>
+<div class="example-wrapper">
+{% for message in app.flashes('error') %}
+<div class="alert alert-danger text-center">
+    {{message}}
+</div>
+{% endfor %}
+    {% for message in app.flashes('success') %}
+    <div class="alert alert-success text-center">
+        {{message}}
+    </div>
+{% endfor %}
+<div class="forms text-center">
+{{form(form)}}
+</div>
+</div>
+{% endblock %}

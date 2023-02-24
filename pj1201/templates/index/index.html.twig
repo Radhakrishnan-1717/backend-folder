@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+{# find #}
+
+{# <h3>remove data using find</h3> #}
+<table>
+<thead>
+<th>id</th>
+<th>username</th>
+<th>userphonenumber</th>
+<th>userage</th>
+<th>userlocation</th>
+<th>usermail</th>
+</thead>
+<tbody>
+{% for  users in user %}
+<tr>
+<td>{{users.id}}</td>
+<td>{{users.username}}</td>
+<td>{{users.userphonenumber}}</td>
+<td>{{users.userage}}</td>
+<td>{{users.userlocation}}</td>
+<td>{{users.usermail}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table> 
+
+{# findby #}
+{# <h3>findby method </h3>
+<table>
+    <thead>
+    <th>id</th>
+    <th>username</th>
+    <th>userphonenumber</th>
+    <th>userage</th>
+    <th>userlocation</th>
+    <th>usermail</th>
+    </thead>
+    <tbody>
+    {% for  userss in users %}
+    <tr>
+    <td>{{userss.id}}</td>
+    <td>{{userss.username}}</td>
+    <td>{{userss.userphonenumber}}</td>
+    <td>{{userss.userage}}</td>
+    <td>{{userss.userlocation}}</td>
+    <td>{{userss.usermail}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table> #}
+
+
+{# findoneby #}
+<h3>findoneby method </h3>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>userphonenumber</th>
+        <th>userage</th>
+        <th>userlocation</th>
+        <th>usermail</th>
+        </thead>
+        <tbody>
+    
+        <tr>
+        <td>{{userss.id}}</td>
+        <td>{{userss.username}}</td>
+        <td>{{userss.userphonenumber}}</td>
+        <td>{{userss.userage}}</td>
+        <td>{{userss.userlocation}}</td>
+        <td>{{userss.usermail}}</td>
+        </tr>
+        </tbody>
+        </table>
+{% endblock %}

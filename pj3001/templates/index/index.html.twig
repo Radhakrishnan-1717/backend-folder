@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+<table>
+<thead>
+<th>username</th>
+<th>userage</th>
+<th>userphonenumber</th>
+<th>userdob</th>
+<th>usermaritalstatus</th>
+<th>userexp</th>
+<th>userrole</th>
+</thead>
+<tbody>
+    {% for users in userdatas %}  
+<tr>
+<td>{{users.username}}</td>
+<td>{{users.userage}}</td>
+<td>{{users.userphonenumber}}</td>
+<td>{{users.userdob.userdob}}</td>
+<td>{{users.userdob.userrmaritalstatus}}</td>
+{# <td>{% if  users.userdob.userrmaritalstatus %} yes  #}
+{# {% else %} no
+{% endif %} #}
+</td>
+<td>{{users.userroles.userexp}}</td>
+<td>{{users.userroles.userrole}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endblock %}

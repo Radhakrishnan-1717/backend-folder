@@ -1,0 +1,25 @@
+{% extends 'update.html.twig' %}
+{% block body %}
+<div class="example-wrapper">
+ <table>
+<thead>
+    <th>userid</th>
+<th>username</th>
+<th>userphonenumber</th>
+    <th>userpalce</th>
+        <th>userage</th>
+</thead>
+{% for users in user %}
+<tbody>
+    <tr>
+ <td>{{users.id}}</td>
+    <td>{{users.username}}</td>
+    <td>{{users.userphonenumber}}</td>
+     <td>{{users.userplace}}</td>
+    <td>{{users.userage}}</td>
+    </tr>
+</tbody>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

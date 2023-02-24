@@ -1,0 +1,9 @@
+.form-control{
+    width:24% !important;
+    display: inline-flex !important;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.form-control{
+    width:30% !important;
+    margin-left: 35% !important;
+    border-radius: 20% !important;
+    border-color: blueviolet !important;
+    border-width: 2% !important;
+}
+.alert-danger{
+    margin: 1% !important;
+    display: inline-table !important;
+}
